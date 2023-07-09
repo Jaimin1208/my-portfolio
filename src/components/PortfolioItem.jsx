@@ -1,49 +1,55 @@
-import React, { useState } from 'react'
-import Close from "../assets/Close.svg"
+import React, { useState } from "react";
+import Close from "../assets/close.svg";
 
-const PortfolioItem = ({ img, title, details,id }) => {
-    const [modal, setModal] = useState(false)
-    
-    const toggleModal = () => {
-        setModal(!modal)
-    }
-    return (
-        <div className="portfolio__item">
-            <img src={img} alt="" className={ ` ${id%2!=0 && "blackandwhite"} portfolio__img`} />
+const PortfolioItem = ({ img, title, details, id }) => {
+	const [modal, setModal] = useState(false);
 
-            <div className="portfolio__hover" onClick={toggleModal}>
-                <h3 className="portfolio__title">{title}</h3>
-            </div>
+	const toggleModal = () => {
+		setModal(!modal);
+	};
+	return (
+		<div className="portfolio__item">
+			<img
+				src={img}
+				alt=""
+				className={` ${id % 2 != 0 && "blackandwhite"} portfolio__img`}
+			/>
 
-            {modal && 
-            <div className="portfolio__modal">
-                <div className="portfolio__modal-content">
-                        <img src={Close} alt="" className="modal__close" onClick={
-                            toggleModal}/>
-                    <h3 className="modal__title">{title}</h3>
-                    
-                    <ul className="modal__list grid">
-                        {details.map(({ icon, title, desc }, index) => {
-                            return (
-                                <li className="modal__item" key={index}>
-                                    <span className="item__icon">{icon}</span>
-                                    <div className="">
-                                        <span className="item__title">{title}</span>
-                                        <span className="item__details">{desc}</span>
-                                    </div>
-                                </li>
-                            )
-                        })}
-                    </ul>
+			<div className="portfolio__hover" onClick={toggleModal}>
+				<h3 className="portfolio__title">{title}</h3>
+			</div>
 
-                    <img src={img} alt="" className="modal__img" />
-                </div>
-            </div>}
-            
+			{modal && (
+				<div className="portfolio__modal">
+					<div className="portfolio__modal-content">
+						<img
+							src={Close}
+							alt=""
+							className="modal__close"
+							onClick={toggleModal}
+						/>
+						<h3 className="modal__title">{title}</h3>
 
+						<ul className="modal__list grid">
+							{details.map(({ icon, title, desc }, index) => {
+								return (
+									<li className="modal__item" key={index}>
+										<span className="item__icon">{icon}</span>
+										<div className="">
+											<span className="item__title">{title}</span>
+											<span className="item__details">{desc}</span>
+										</div>
+									</li>
+								);
+							})}
+						</ul>
 
-      </div>
-  )
-}
+						<img src={img} alt="" className="modal__img" />
+					</div>
+				</div>
+			)}
+		</div>
+	);
+};
 
-export default PortfolioItem
+export default PortfolioItem;
