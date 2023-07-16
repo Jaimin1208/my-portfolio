@@ -1,4 +1,3 @@
-import React from 'react'
 import { portfolio } from "../../data"
 import PortfolioItem from '../../components/PortfolioItem'
 import "./portfolio.css"

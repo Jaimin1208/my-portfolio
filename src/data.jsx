@@ -3,15 +3,14 @@ import {
   FaUser,
   FaFolderOpen,
   FaEnvelopeOpen,
-  FaBriefcase,
   FaGraduationCap,
   FaCode,
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
+import Work1 from './assets/github_ss.png';
+import Work2 from './assets/project-4.jpeg';
+import Work3 from './assets/portfolio_ss.png';
 import Work4 from './assets/project-4.jpeg';
 import Work5 from './assets/project-5.jpg';
 import Work6 from './assets/project-6.jpg';
@@ -136,41 +135,15 @@ export const stats = [
 	},
 ];
 
-export const resume = [
-  // {
-  //   id: 1,
-  //   category: 'experience',
-  //   icon: <FaBriefcase />,
-  //   year: '2018 - PRESENT',
-  //   title: 'Web Developer <span> Envato </span>',
-  //   desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
-  // },
-
-  // {
-  //   id: 2,
-  //   category: 'experience',
-  //   icon: <FaBriefcase />,
-  //   year: '2013 - 2018',
-  //   title: 'UI/UX Designer <span> Themeforest </span>',
-  //   desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
-  // },
-
-  // {
-  //   id: 3,
-  //   category: 'experience',
-  //   icon: <FaBriefcase />,
-  //   year: '2005 - 2013',
-  //   title: 'Consultant <span> Videohive </span>',
-  //   desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
-  // },
-
+export const education = [
+  
   {
     id: 1,
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2024',
     title: 'Bachelors Degree <span> LD college of Engineering </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    desc: 'Year : 2020-pursuing <br/> CPI : 9.30',
   },
 
   {
@@ -179,7 +152,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '2020',
     title: 'HSC<span> Adani Vidya Mandir </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    desc: 'Year : 2020<br />Percentage Obtained : 93.6',
   },
 
   {
@@ -188,7 +161,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '2018',
     title: 'SSC <span>Adani Vidya Mandir </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+    desc: 'Year : 2018<br />Percentage Obtained : 94.5',
   },
 ];
 
@@ -196,13 +169,13 @@ export const skills = [
 	{
 		id: 1,
 		title: "Html",
-		percentage: "25",
+		percentage: "70",
 	},
 
 	{
 		id: 2,
 		title: "Javascript",
-		percentage: "60",
+		percentage: "65",
 	},
 
 	{
@@ -213,7 +186,7 @@ export const skills = [
 	{
 		id: 4,
 		title: "React",
-		percentage: "45",
+		percentage: "55",
 	},
 	{
 		id: 5,
@@ -223,7 +196,27 @@ export const skills = [
 	{
 		id: 6,
 		title: "Node.js",
+		percentage: "40",
+  },
+	{
+		id: 7,
+		title: "Express.js",
 		percentage: "65",
+  },
+	{
+		id: 8,
+		title: "MongoDB",
+		percentage: "60",
+  },
+	{
+		id: 9,
+		title: "Python",
+		percentage: "75",
+  },
+	{
+		id: 10,
+		title: "C",
+		percentage: "60",
   },
 
 
@@ -231,169 +224,154 @@ export const skills = [
 ];
 
 export const portfolio = [
-  {
-    id: 1,
-    img: Work1,
-    title: 'Photo Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
+	{
+		id: 1,
+		img: Work1,
+		title: "Github Finder",
+		details: [
+			{
+				icon: <FiFileText />,
+				title: "Project : ",
+				desc: "Github Profiles and Repos",
+			},
+			{
+				icon: <FaCode />,
+				title: "Skills Used: ",
+				desc: "React,JS,Tailwind",
+			},
+			{
+				icon: <FiExternalLink />,
+				title: "Preview : ",
+				desc: "https://github-finder-api-ebon.vercel.app/",
+			},
+		],
+	},
 
-  {
-    id: 2,
-    img: Work2,
-    title: 'Website Design',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React JS',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
+	{
+		id: 2,
+		img: Work2,
+		title: "Natours App",
+		details: [
+			{
+				icon: <FiFileText />,
+				title: "Project : ",
+				desc: "Tours Booking",
+			},
+			{
+				icon: <FaCode />,
+				title: "Skills Used: ",
+				desc: "NodeJS, ExpressJS, MongoDB",
+			},
+			{
+				icon: <FiExternalLink />,
+				title: "Functionalities: ",
+				desc: "Error Handling,Password Management,Signup,Login",
+			},
+		],
+	},
 
-  {
-    id: 3,
-    img: Work3,
-    title: 'Video Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Video',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Premium',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
+	{
+		id: 3,
+		img: Work3,
+		title: "Portfolio",
+		details: [
+			{
+				icon: <FiFileText />,
+				title: "Project : ",
+				desc: "Portfolio site",
+			},
+			{
+				icon: <FaCode />,
+				title: "Skills Used : ",
+				desc: "CSS,React,JS",
+			},
+			{
+				icon: <FiExternalLink />,
+				title: "Preview : ",
+				desc: "https://my-portfolio-psi-cyan.vercel.app/",
+			},
+		],
+	},
 
-  {
-    id: 4,
-    img: Work4,
-    title: 'Video Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Video',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Premium',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
+	{
+		id: 4,
+		img: Work4,
+		title: "Video Editing",
+		details: [
+			{
+				icon: <FiFileText />,
+				title: "Project : ",
+				desc: "Video",
+			},
+			{
+				icon: <FiUser />,
+				title: "Client : ",
+				desc: "Dribble",
+			},
+			{
+				icon: <FaCode />,
+				title: "Language : ",
+				desc: "Adobe Premium",
+			},
+			{
+				icon: <FiExternalLink />,
+				title: "Preview : ",
+				desc: "www.dribble.com",
+			},
+		],
+	},
 
-  {
-    id: 5,
-    img: Work5,
-    title: 'Landing Page',
-    details: [
-      {
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        title: 'Language : ',
-        desc: 'React JS, Node JS',
-      },
-      {
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
+	{
+		id: 5,
+		img: Work5,
+		title: "Landing Page",
+		details: [
+			{
+				title: "Project : ",
+				desc: "Website",
+			},
+			{
+				title: "Client : ",
+				desc: "Dribble",
+			},
+			{
+				title: "Language : ",
+				desc: "React JS, Node JS",
+			},
+			{
+				title: "Preview : ",
+				desc: "www.dribble.com",
+			},
+		],
+	},
 
-  {
-    id: 6,
-    img: Work6,
-    title: 'Photo Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dibble.com',
-      },
-    ],
-  },
+	{
+		id: 6,
+		img: Work6,
+		title: "Photo Editing",
+		details: [
+			{
+				icon: <FiFileText />,
+				title: "Project : ",
+				desc: "Photo",
+			},
+			{
+				icon: <FiUser />,
+				title: "Client : ",
+				desc: "Dribble",
+			},
+			{
+				icon: <FaCode />,
+				title: "Language : ",
+				desc: "Adobe Photoshop",
+			},
+			{
+				icon: <FiExternalLink />,
+				title: "Preview : ",
+				desc: "www.dibble.com",
+			},
+		],
+	},
 ];
 
 export const themes = [

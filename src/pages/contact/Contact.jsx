@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
 	FaEnvelopeOpen,
@@ -52,18 +52,18 @@ const Contact = () => {
 					setForm({
 						name: "",
 						email: "",
-            message: "",
-            subject:""
+						message: "",
+						subject:""
 					});
         },
     )
-    .catch(err=> {
+    .catch( () => {
       alert("try again please!")
     })
 
   }
 	return (
-		<section className="contact section" >
+		<section className="contact section">
 			<h2 className="section__title">
 				Get In <span>Touch</span>
 			</h2>
@@ -99,7 +99,10 @@ const Contact = () => {
 					</div>
 
 					<div className="contact__socials">
-						<a href="https://www.linkedin.com" className="contact__social-link">
+						<a
+							href="https://www.linkedin.com/in/jaimin-panchal-04a883247"
+							className="contact__social-link"
+						>
 							<FaLinkedin />
 						</a>
 						<a
@@ -157,7 +160,7 @@ const Contact = () => {
 						></textarea>
 					</div>
 
-					<button className="button" type="submit"  >
+					<button className="button" type="submit">
 						Send Message
 						<span className="button__icon contact__button-icon">
 							<FiSend />

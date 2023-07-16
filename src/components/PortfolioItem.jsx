@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Close from "../assets/close.svg";
 
 const PortfolioItem = ({ img, title, details, id }) => {
@@ -36,8 +36,21 @@ const PortfolioItem = ({ img, title, details, id }) => {
 									<li className="modal__item" key={index}>
 										<span className="item__icon">{icon}</span>
 										<div className="">
-											<span className="item__title">{title}</span>
-											<span className="item__details">{desc}</span>
+											{title == "Preview : " ? (
+												<>
+													<span>{title}</span>
+												<a
+													href={desc}
+												>
+													{desc}
+													</a>
+												</>
+											) : (
+												<>
+													<span className="item__title">{title}</span>
+													<span className="item__details">{desc}</span>
+												</>
+											)}
 										</div>
 									</li>
 								);

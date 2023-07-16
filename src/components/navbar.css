@@ -5,7 +5,7 @@
     background-color: var(--container-color);
     width: 100%;
     padding: 60px 30px;
-    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1);
+    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1);  /*this transitionn will be applied when the show-menu class applies after showMenu state changes to true*/
     z-index: 100;
 }   
 
@@ -31,12 +31,8 @@
     font-weight: var(--weight-500);
 }   
 
-/* .active-nav .nav__icon,
-.active-nav .nav__name{
-    color:var(--first-color);
-} */
 
-.active .nav__icon,
+.active .nav__icon, /*this .active .nav__icon signifies navicon with active class ,this does not represent .active class element whose descendant is .nav__icon element*/
 .active .nav__name{
     color:var(--first-color);
 }
@@ -79,7 +75,8 @@
         all:unset
     }
 
-    .nav__toggle{
+    .nav__toggle 
+    {
         display: none;
     }
 
@@ -90,8 +87,8 @@
         display: flex;
         align-items: center;
         z-index: 100;
+    } 
 
-    }
     .nav__item{
         margin-block: 20px;
     }

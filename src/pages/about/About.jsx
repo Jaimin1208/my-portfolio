@@ -1,10 +1,8 @@
-import React from 'react'
 import Info from '../../components/Info'
 import Stats from '../../components/Stats'
 import { FaDownload } from "react-icons/fa";
-// import CV from "../../assets/steve-Cv.pdf"
+import CV from "../../assets/LDCE_EC_JAIMIN PANCHAL_RESUME.pdf"
 import Skills from "../../components/Skills"
-import { resume } from '../../data';
 import ResumeItem from '../../components/ResumeItem';
 import "./about.css"
 
@@ -24,8 +22,8 @@ const About = () => {
 							<Info />
 						</ul>
 
-						<a href="" download="JaiminCv.pdf" className="button">
-							Download CV{" "}
+						<a href={CV} download="JaiminPanchal_Cv" className="button">
+							Download CV
 							<span className="button__icon">
 								<FaDownload />{" "}
 							</span>
@@ -54,9 +52,7 @@ const About = () => {
         
         <div className="resume__container grid">
           <div className="resume__data">
-            {/* {resume.map((val) => {
-              return <ResumeItem key={val.id} {...val} />
-            })} */}
+           
             <ResumeItem />
           </div>
         </div>

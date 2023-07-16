@@ -1,18 +1,17 @@
-import React from 'react'
-import { resume } from '../data'
+import { education } from '../data'
 import parse from "html-react-parser"
 
 const ResumeItem = () => {
     return (
     <>
         {
-            resume.map((val) => {
+            education.map((val) => {
                 return (
-                    <div className="resume__item">
+                    <div className="resume__item" key={val.id}>
                         <div className="resume__icon">{val.icon}</div>
                         <span className="resume__date">{val.year}</span>
                         <h3 className="resume__subtitle">{parse(val.title)}</h3>
-                        <p className="resume__description">{val.desc }</p>
+                        <p className="resume__description">{parse(val.desc) }</p>
                 </div>
                 )
             })} 
